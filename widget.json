@@ -2,7 +2,7 @@
   "$schema": "./widget.schema.json",
   "id": "lakehouse.hello-widget",
   "name": "Hello Widget",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Standalone LakeHouse Studio hello-world widget — public site, in-app embed, and agent customization reference from one codebase.",
   "author": {
     "name": "LakeHouse Studio"

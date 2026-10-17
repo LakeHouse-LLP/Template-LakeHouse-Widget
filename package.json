@@ -1,6 +1,6 @@
 {
   "name": "@lakehouse/template-widget",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Standalone LakeHouse Studio widget template (agent-friendly; see .lakehouse/org.json)",
   "type": "module",
   "engines": {
@@ -70,8 +70,8 @@
     "@changesets/changelog-github": "^1.0.1",
     "@changesets/cli": "^3.0.3",
     "@changesets/get-github-info": "^1.0.1",
-    "@types/node": "^22.13.10",
-    "esbuild": "^0.25.0",
-    "typescript": "^5.8.2"
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
   }
 }
