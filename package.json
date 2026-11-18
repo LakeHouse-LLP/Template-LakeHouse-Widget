@@ -38,7 +38,7 @@
     "citation:check": "node scripts/citation-gen.mjs --check",
     "hooks:install": "node scripts/install-hooks.mjs",
     "changeset": "changeset",
-    "changeset:version": "changeset version && npm install --package-lock-only",
+    "changeset:version": "changeset version && node scripts/sync-widget-version.mjs && npm install --package-lock-only",
     "changeset:tag": "node scripts/release-tag.mjs",
     "release:build": "node scripts/release-build.mjs",
     "release:notes": "node scripts/release-notes.mjs",
