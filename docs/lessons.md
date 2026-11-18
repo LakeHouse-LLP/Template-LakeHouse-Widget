@@ -8,6 +8,14 @@ Status values: `open` | `fixed` | `promoted`
 
 ## Entries
 
+### 2026-11-18 - changesets bumps package.json only, widget.json drifted
+
+| | |
+| --- | --- |
+| **Lesson** | `changeset version` bumps package.json and CHANGELOG.md but knows nothing about widget.json, so the first version PR after the template gained a version check broke main (check-widget version mismatch). A hotfix bumped widget.json by hand, which fixed one release and left the next one broken the same way. |
+| **Action** | Added scripts/sync-widget-version.mjs and wired it into the `changeset:version` script between `changeset version` and the lockfile refresh, plus tests/sync-widget-version.test.mjs. The sync replaces only the top-level version line, so widget.json formatting is untouched. |
+| **Status** | `fixed` |
+
 ### 2026-10-10 - continuous self-improvement house rule
 
 | | |
